@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathQuiz", "MathQuiz\MathQuiz.csproj", "{DFF8FC3B-66AA-49F0-96CC-B65243D7114A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFF8FC3B-66AA-49F0-96CC-B65243D7114A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFF8FC3B-66AA-49F0-96CC-B65243D7114A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFF8FC3B-66AA-49F0-96CC-B65243D7114A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFF8FC3B-66AA-49F0-96CC-B65243D7114A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E39583CC-2F6B-4292-A6DE-835D7288EA91}
+	EndGlobalSection
+EndGlobal
