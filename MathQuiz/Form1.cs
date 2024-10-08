@@ -12,7 +12,7 @@ namespace MathQuiz
 {
 
     public partial class Form1 : Form
-    {   
+    {
 
         Random randomizer = new Random();
 
@@ -66,8 +66,8 @@ namespace MathQuiz
             dividedRightLabel.Text = divisor.ToString();
             quotient.Value = 0;
 
-            timeLeft = 60;
-            timeLabel.Text = "60 seconds";
+            timeLeft = 30;
+            timeLabel.Text = "30 seconds";
             timer1.Start();
 
         }
@@ -92,7 +92,7 @@ namespace MathQuiz
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            timer1.Tick += new EventHandler(timer1_Tick);
+           
             if (CheckTheAnswer())
             {
                 timer1.Stop();
@@ -102,10 +102,10 @@ namespace MathQuiz
             }
             else if (timeLeft > 0)
             {
-                timeLeft--;
+                timeLeft = timeLeft - 1;
                 timeLabel.Text = timeLeft + "seconds";
             }
-            else 
+            else
             {
                 timer1.Stop();
                 timeLabel.Text = "Time is up!";
@@ -116,7 +116,7 @@ namespace MathQuiz
                 quotient.Value = dividend / divisor;
                 startButton.Enabled = true;
             }
-            
+
         }
     }
 }
