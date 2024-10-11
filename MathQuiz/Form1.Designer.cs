@@ -76,7 +76,7 @@
             this.label1.Location = new System.Drawing.Point(248, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 25);
+            this.label1.Size = new System.Drawing.Size(150, 37);
             this.label1.TabIndex = 1;
             this.label1.Text = "Time Left";
             // 
@@ -131,8 +131,11 @@
             this.sum.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sum.MaximumSize = new System.Drawing.Size(150, 0);
             this.sum.Name = "sum";
-            this.sum.Size = new System.Drawing.Size(150, 35);
+            this.sum.Size = new System.Drawing.Size(150, 48);
             this.sum.TabIndex = 1;
+            this.sum.ValueChanged += new System.EventHandler(this.sum_ValueChanged);
+            this.sum.Click += new System.EventHandler(this.answer_Enter);
+            this.sum.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // minusLeftLabel
             // 
@@ -185,8 +188,10 @@
             this.difference.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.difference.MaximumSize = new System.Drawing.Size(150, 0);
             this.difference.Name = "difference";
-            this.difference.Size = new System.Drawing.Size(150, 35);
+            this.difference.Size = new System.Drawing.Size(150, 48);
             this.difference.TabIndex = 2;
+            this.difference.Click += new System.EventHandler(this.answer_Enter);
+            this.difference.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // dividedRightLabel
             // 
@@ -283,8 +288,10 @@
             this.product.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.product.MaximumSize = new System.Drawing.Size(150, 0);
             this.product.Name = "product";
-            this.product.Size = new System.Drawing.Size(150, 35);
+            this.product.Size = new System.Drawing.Size(150, 48);
             this.product.TabIndex = 3;
+            this.product.Click += new System.EventHandler(this.answer_Enter);
+            this.product.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // quotient
             // 
@@ -293,8 +300,10 @@
             this.quotient.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.quotient.MaximumSize = new System.Drawing.Size(150, 0);
             this.quotient.Name = "quotient";
-            this.quotient.Size = new System.Drawing.Size(150, 35);
+            this.quotient.Size = new System.Drawing.Size(150, 48);
             this.quotient.TabIndex = 4;
+            this.quotient.Click += new System.EventHandler(this.answer_Enter);
+            this.quotient.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // startButton
             // 

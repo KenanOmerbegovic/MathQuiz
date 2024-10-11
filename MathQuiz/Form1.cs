@@ -92,7 +92,7 @@ namespace MathQuiz
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-           
+
             if (CheckTheAnswer())
             {
                 timer1.Stop();
@@ -118,5 +118,22 @@ namespace MathQuiz
             }
 
         }
+
+        private void sum_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void answer_Enter(object sender, EventArgs e)
+        {
+            NumericUpDown answerBox = sender as NumericUpDown;
+
+            if (answerBox != null)
+            {
+                int lengthOfAnswer = answerBox.Value.ToString().Length;
+                answerBox.Select(0, lengthOfAnswer);
+            }
+        }
+
     }
 }
