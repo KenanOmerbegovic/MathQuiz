@@ -69,7 +69,7 @@ namespace MathQuiz
             timeLeft = 30;
             timeLabel.Text = "30 seconds";
             timer1.Start();
-
+           
         }
 
         private void startButton_Click(object sender, EventArgs e)
@@ -117,6 +117,19 @@ namespace MathQuiz
                 startButton.Enabled = true;
             }
 
+            if (timeLeft <= 5)
+            {
+                timeLabel.BackColor = System.Drawing.Color.Red;
+            }
+            else if (CheckTheAnswer())
+            {
+                timeLabel.BackColor = System.Drawing.Color.Green;
+            }
+            else
+            {
+                timeLabel.BackColor = System.Drawing.Color.White;
+            }
+
         }
 
         private void sum_ValueChanged(object sender, EventArgs e)
@@ -133,6 +146,11 @@ namespace MathQuiz
                 int lengthOfAnswer = answerBox.Value.ToString().Length;
                 answerBox.Select(0, lengthOfAnswer);
             }
+        }
+
+        private void timeLabel_Click(object sender, EventArgs e)
+        {
+
         }
 
     }
